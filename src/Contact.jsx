@@ -44,7 +44,7 @@ const Contact = () => {
                     <input type="email" class="form-control" placeholder='Enter Your Email' name="email" value={data.email} onChange={allContent} />
 
                     <label className="form-label"><h4>Conatct No:-</h4></label>
-                    <input type="number" className="form-control" placeholder='Enter Your Contact Number:- 012-3456-789' name="num" value={data.num} onChange={allContent} />
+                    <input type="number" className="form-control" placeholder='Enter Your Contact Number:-' name="num" value={data.num} onChange={allContent} />
 
                     <label className="form-label"><h4>Message :-</h4></label>
                     <textarea className="form-control" placeholder="Leave a message  here" name="msg" value={data.msg} onChange={allContent}></textarea>

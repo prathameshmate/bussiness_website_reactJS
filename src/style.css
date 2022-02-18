@@ -179,7 +179,7 @@
 
 .form form{
     /* border: 2px solid green; */
-    width: 50%;
+    width:50%;
     height: auto;
     padding: 10px;
     display: flex;
@@ -187,13 +187,23 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+@media screen and (max-width : 970px) {
+    .form form{
+        width:70%;
+    }
+}
+@media screen and (max-width : 650px) {
+    .form form{
+        width:100%;
+    }
+}
 .form form  label , .form form  input , .form form textarea{
     /* border: 2px solid black; */
     width: 100%;
     height: auto;
     margin: 5px;
     padding: 5px;
- 
+
 }
 .form form input ,  .form form textarea{
     border-bottom: 2px solid black;
