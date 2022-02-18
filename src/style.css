@@ -1,0 +1,231 @@
+
+*{
+    box-sizing: border-box;
+}
+
+/* ========navbar================= */
+
+.navbar{
+    /* border: 2px solid red; */
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: white ;
+    border-radius: 5px;
+}
+.navbar .logo{
+    /* border: 2px solid black; */
+    padding: 5px;
+    margin: 5px 0 0 120px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(114, 116, 121);
+}
+.navbar .tabs{
+    /* border: 5px solid green; */
+    padding: 0px 100px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navbar .link{
+    /* border: 2px solid red; */
+    text-decoration-line: none;
+    margin: 0 15px;
+    padding:  1px 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar .link:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+.active{
+    color: black;
+    border-bottom: 2px solid black;
+    border-radius: 3px;
+}
+
+/* =============Home and About========== */
+.container{
+    /* border : 2px solid red; */
+    width: 100%;
+    height: auto;
+    padding: 5px 0px;
+    margin-top: 50px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width : 500px) {
+    .container{
+        flex-direction: column;
+    }
+}
+.container .data_container{
+    /* border: 2px solid black; */
+    font-size: 20px;
+    word-spacing:normal;
+    text-transform: capitalize;
+    padding: 0px;
+    margin: 15px;
+    width: 45%;
+    height: auto;
+}
+.container .data_container button .link{
+    color: black;
+    /* border: 2px solid red; */
+    padding: 2px;
+    text-transform: capitalize;
+    text-decoration-line: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.container .data_container button{  
+    transition: all 1s linear 0s;
+}
+.container .data_container button:hover{  
+    border-color: black;
+    background-color:white;
+}
+.container .img_container{
+    /* border: 2px solid black; */
+    width:50%;
+    height: auto;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.container .img_container  img{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform:translateY(-10px);
+    }
+}
+.container .data_container button .link:hover{
+   /* border-bottom: 2px solid black; */
+   /* background-color: red; */
+   border-radius: 4px;
+}
+
+.heading_service{
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* =============Services========== */
+.cards{
+    /* border : 2px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0 50px 0;
+   
+}
+.cards .card    {
+    /* border: 2px solid green    ; */
+     width: 380px;
+    height: auto;
+    padding: 10px ;
+    margin: 25px 0px ;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 1px black;
+}
+.cards .card img    {
+   width: 100%;
+   height: 100%;
+}
+.cards .card-body a{
+    /* border: 2px solid red; */
+    transition: all 1s linear 0s;
+    color: black;
+    font-weight: bold;
+}
+.cards .card-body a:hover{
+    border-color: black;
+    background-color:white;
+}
+
+/* ==========================contact=============================== */
+
+.form{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:auto;
+    height: auto;
+    margin: 50px;
+    padding: 10px 0;
+}
+
+.form form{
+    /* border: 2px solid green; */
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form form  label , .form form  input , .form form textarea{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+ 
+}
+.form form input ,  .form form textarea{
+    border-bottom: 2px solid black;
+}
+
+.form form .btn{
+    margin:  5px 10px 5px 0;
+    padding: 2px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    transition: all 1s linear 0s;
+    color: black;
+    font-size: 18px;
+   
+}
+
+.form form .btn >input:hover , .form form .btn >button:hover{  
+    border-color: black;
+    background-color:white;
+}
+
+/* ===========================footer======================== */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;  
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration-line: none;
+}
